@@ -43,6 +43,7 @@ public abstract class GenModel implements IGenModel, IGeneratedModel, Serializab
   @Deprecated
   public GenModel(String[] names, String[][] domains) {
     this(names, domains, null);
+    throw new UnsupportedOperationException("This is just to test that I am not calling this constructor anywhere."); // FIXME
   }
 
   //--------------------------------------------------------------------------------------------------------------------
